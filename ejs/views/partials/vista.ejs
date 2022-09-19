@@ -1,0 +1,23 @@
+<div class="jumbotron">
+    <h1>Vista de Productos</h1>
+    <br>
+
+<% if(productos.length !== 0) { %>
+    <div class="table-responsive">
+        <table class="table table-dark">
+            <tr> <th>Nombre</th> <th>Precio</th> <th>Foto</th> </tr>
+           <% productos.forEach(function(producto) { %>
+            <tr>
+                <td> <%= producto.nombre %> </td>
+                <td> <%= producto.precio %> </td>
+                <td> <%= producto.foto %></td>
+            </tr>
+            <% }) %>
+        </table>
+    </div>
+<% } else{ %> 
+   <h3 class="alert alert-warning">No se encontraron productos</h3>
+<% }%>
+<a href="http://127.0.0.1:8080/" class="btn btn-secondary">Ingresar producto</a>
+
+</div>

@@ -1,0 +1,11 @@
+h1 {
+    color:black;
+}
+
+label {
+    font-weight: bold;
+}
+
+.jumbotron {
+    min-height: 150vh;
+}
