@@ -8,7 +8,7 @@ const PORT = 8080;
 
 app.set("view engine", "ejs");
 
-app.use(express.static("public"));
+app.use(express.static("views/public"));
 
 // Importamos lo necesario para enviar JSON
 app.use(express.urlencoded({ extended: true }));
