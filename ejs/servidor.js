@@ -16,7 +16,7 @@ app.use(express.json());
 
 app.get("/productos",(req,res) => {
     let prod_list = (productos.getAll())
-    res.render("index.ejs", {
+    res.render("pages/index.ejs", {
         productos: productos})
 });
 
